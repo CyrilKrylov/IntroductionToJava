@@ -1,9 +1,14 @@
 package by.epam.module02.onedimensional_array;
 
+/*В массиве целых чисел с количеством элементов n найти наиболее часто встречающееся число. Если таких
+чисел несколько, то определить наименьшее из них.*/
+
 public class Task9 {
 
     public static int getDesiredNumber(int[] a) {
+		/* массив уникальных значений */
         int[] distinctArray = new int[a.length];
+		/* массив количества повторяющихся значений из distinctArray */
         int[] quantitiesArray = new int[a.length];
         distinctArray[0] = a[0];
         quantitiesArray[0] = 1;

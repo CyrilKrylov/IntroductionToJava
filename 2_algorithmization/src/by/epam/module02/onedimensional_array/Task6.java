@@ -1,5 +1,8 @@
 package by.epam.module02.onedimensional_array;
 
+/*Задана последовательность N вещественных чисел. Вычислить сумму чисел, порядковые номера которых
+являются простыми числами*/
+
 public class Task6 {
 
     public static double sumOfSequenceNumbers(double[] a) {

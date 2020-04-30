@@ -1,5 +1,7 @@
 package by.epam.module02.twodimensional_array;
 
+/*Дана матрица. Вывести на экран все нечетные столбцы, у которых первый элемент больше последнего*/
+
 public class Task1A {
 
     public static void outOddColumns(int[][] a) {

@@ -1,6 +1,8 @@
 package by.epam.module02.onedimensional_array;
 
-import java.util.Arrays;
+/*Дан массив действительных чисел, размерность которого N. Подсчитать, сколько в нем отрицательных,
+положительных и нулевых элементов*/
+
 
 public class Task3 {
 

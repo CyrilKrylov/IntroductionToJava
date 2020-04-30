@@ -8,7 +8,6 @@ import by.epam.module02.twodimensional_array.*;
 public class MainModule02 {
 	
 	public static void main(String[] args) {
-        System.out.println(Task1.getSumOfElementsStream(new int[]{1,2,3,4,5,6,7,8,9},9));
         System.out.println(Task1.getSumOfElements(new int[]{1,2,3,4,5,6,7,8,9},9));
         double[] inputD = {1, 2, 3, 4, 5, 6, 7, 8, 9};
         System.out.println(Task2.replaceOnZ(inputD,5));
