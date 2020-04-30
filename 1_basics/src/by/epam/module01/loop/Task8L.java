@@ -1,32 +1,35 @@
 package by.epam.module01.loop;
 
+/*Для каждого натурального числа в промежутке от m до n вывести все делители, кроме единицы и самого числа.
+m и n вводятся с клавиатуры*/
+
 public class Task8L {
 
-    public static void showEqualDigits(int firstDigit, int secondDigit) {
-        int inpFirstDig = firstDigit;
+    public static void showEqualDigits(final int m,final int n) {
+        int inpFirstNumber = m;
         boolean outerFlag = true;
         do {
             if (outerFlag) {
                 outerFlag = false;
             } else {
-                inpFirstDig /= 10;
+            	inpFirstNumber /= 10;
             }
-            int inpSecondDigit = secondDigit;
-            int lastDig = inpFirstDig % 10;
+            int inpSecondNumber = n;
+            int lastDig = inpFirstNumber % 10;
             boolean flag = true;
             do {
                 if (flag) {
                     flag = false;
                 } else {
-                    inpSecondDigit /= 10;
+                	inpSecondNumber /= 10;
                 }
-                int innerSecDig = inpSecondDigit % 10;
+                int innerSecDig = inpSecondNumber % 10;
                 if (lastDig == innerSecDig) {
                     System.out.println(lastDig + " совпадающее число");
                 }
-            } while (inpSecondDigit / 10 != 0);
+            } while (inpSecondNumber / 10 != 0);
         }
-        while (inpFirstDig / 10 != 0);
+        while (inpFirstNumber / 10 != 0);
     }
 
 }

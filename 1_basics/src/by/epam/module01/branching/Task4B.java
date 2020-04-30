@@ -1,5 +1,8 @@
 package by.epam.module01.branching;
 
+/*Заданы размеры А, В прямоугольного отверстия и размеры х, у, z кирпича. Определить, пройдет ли кирпич через
+отверстие.*/
+
 public class Task4B {
 
     public static String doesBrickFit(int a, int b, int x, int y, int z) {

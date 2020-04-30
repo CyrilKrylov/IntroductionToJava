@@ -1,5 +1,8 @@
 package by.epam.module01.linear_program;
 
+/*Для данной области составить линейную программу, которая печатает true, если точка с координатами (х, у)
+принадлежит закрашенной области, и false — в противном случае:*/
+
 public class Task6 {
 
     public static boolean isInArea(int x, int y) {

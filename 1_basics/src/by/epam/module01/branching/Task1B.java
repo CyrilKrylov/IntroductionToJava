@@ -1,5 +1,8 @@
 package by.epam.module01.branching;
 
+/*Даны два угла треугольника (в градусах). Определить, существует ли такой треугольник, и если да, то будет ли
+он прямоугольным*/
+
 public class Task1B {
 
     public static String isTriangle(int a, int b) {

@@ -1,5 +1,6 @@
 package by.epam.module01.branching;
 
+/*Вычислить значение функции: F(x)*/
 
 public class Task5B {
 

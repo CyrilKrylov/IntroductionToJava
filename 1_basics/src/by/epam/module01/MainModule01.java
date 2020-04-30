@@ -21,7 +21,7 @@ public class MainModule01 {
         out(Task1L.getSumOfSequence());
         Task2L.getFunctionValues(1,5,1);
         out(Task3L.getSumOfSquares());
-        out(Task4L.getMultOfSquares());
+        out(Task4L.getProductOfSquares(200L));
         out(Task5L.getSum(0.1));
         out(Task6L.getCorrespondingInteger('~'));
         Task7L.getDeviders(5,100);

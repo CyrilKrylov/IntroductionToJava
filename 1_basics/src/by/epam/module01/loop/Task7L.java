@@ -1,5 +1,8 @@
 package by.epam.module01.loop;
 
+/*Для каждого натурального числа в промежутке от m до n вывести все делители, кроме единицы и самого числа.
+m и n вводятся с клавиатуры*/
+
 public class Task7L {
 
     public static void getDeviders(int n, int m) {

@@ -1,15 +1,31 @@
 package by.epam.module01.loop;
 
-import java.math.BigInteger;
+/*Составить программу нахождения произведения квадратов первых двухсот чисел.*/
 
 public class Task4L {
 
-    public static String getMultOfSquares() {
-        BigInteger outMul = BigInteger.valueOf(1L);
-        for (long i = 1; i <= 200 ; i++) {
-            outMul = outMul.multiply(BigInteger.valueOf(i*i));
+    public static long getProductOfSquares(long inputValue) {
+        long outProduct = 1L;
+        long maxLong = 0x7fffffffffffffffL;
+        
+        for (long i = 1; i <= inputValue ; i++) {
+        	long innerProduct;
+        	long intermediateValue;
+        	
+        	innerProduct = i*i;
+        	intermediateValue = outProduct * innerProduct;
+        	if (intermediateValue<0 ) {
+				System.out.println("Произведение квадратов первых N чисел с переменной типа long возможно если N<"+i);
+				return outProduct;
+			}
+        	outProduct =intermediateValue;
         }
-        return outMul.toString();
+        return outProduct;
     }
+    
+    
+    public static void main(String[] args) {
+		System.out.println(getProductOfSquares(200));
+	}
 
 }

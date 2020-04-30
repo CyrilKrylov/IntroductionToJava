@@ -25,7 +25,7 @@ public class MainModule02 {
         }
         System.out.println(Task6.sumOfSequenceNumbers(sdf));
         System.out.println(Task7.maxOfSums(new double[]{1,2,3,4,55,6,7,8,9,11}));
-        int[] ints1 = new int[]{0,2,1,3,1,4,1,6,1,8,-1};
+        int[] ints1 = new int[]{0,2,1,3,1,4,1,6,1,8,-1};  
         System.out.println(Arrays.toString(Task8.getNewSequence(ints1)));
         System.out.println();
         int[] ints2 = {1, 3, 3, 3, 5, 5, 5, 6, 6, 6,2,2};
