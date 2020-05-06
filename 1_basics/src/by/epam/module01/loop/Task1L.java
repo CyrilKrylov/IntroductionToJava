@@ -59,8 +59,5 @@ public class Task1L {
 		System.out.println(message);
 	}
     
-    public static void main(String[] args) {
-		System.out.println(getSumOfSequence());
-	}
 
 }
