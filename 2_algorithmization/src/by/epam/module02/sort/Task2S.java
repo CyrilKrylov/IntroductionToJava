@@ -9,8 +9,9 @@ public class Task2S {
 
     public static void main(String[] args) {
         System.out.println(Arrays.toString(joinAscendingSequences(
-                new int[]{1,3,5,7,9,10},
-                new int[]{2,3,4,5,6,7,8,9,20}
+                new int[]{2,3,4,5,6,7,8,9,20},
+                new int[]{1,3,5,7,9,10}
+
         )));
     }
 
@@ -30,7 +31,8 @@ public class Task2S {
                 outSequence[i] = b[bIndexBuffer];
                 bIndexBuffer++;
                 continue;
-            } if (bIndexBuffer == b.length){
+            }
+            if (bIndexBuffer == b.length){
                 outSequence[i] = a[aIndexBuffer];
                 aIndexBuffer++;
                 continue;

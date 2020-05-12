@@ -66,6 +66,18 @@ public class MainModule02 {
             System.out.println();
         }
         System.out.println("\n");
+        System.out.println();
+    }
+
+    public static void outTwoDimensionalArray(long[][] inputArray) {
+        for (int i = 0; i < inputArray.length; i++) {
+            for (int j = 0; j < inputArray[i].length; j++) {
+                System.out.print(inputArray[i][j] + " ");
+            }
+            System.out.println();
+        }
+        System.out.println("\n");
+        System.out.println();
     }
 
     /*for
