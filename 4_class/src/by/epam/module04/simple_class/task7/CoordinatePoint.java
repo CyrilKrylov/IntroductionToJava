@@ -19,4 +19,6 @@ public class CoordinatePoint {
 		return this.y;
 	}
 
+
+
 }
