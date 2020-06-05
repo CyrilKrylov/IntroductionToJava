@@ -6,17 +6,25 @@ package by.epam.module03.string_like_object;
 public class Task7O {
 
     public static void main(String[] args) {
-
+        System.out.println(removeDuplicatesAndSpaces("abc cde      def"));
     }
 
-    public static void removeDuplicatesAndSpaces(String inputString){
+    public static String removeDuplicatesAndSpaces(String inputString){
         String outString;
         StringBuilder builder;
 
         outString = inputString;
         outString = outString.replaceAll(" ", "");
         builder = new StringBuilder(outString);
-        
+        for (int i = 0; i < builder.length(); i++) {
+            String charString = String.valueOf(builder.charAt(i));
+            int index;
+            while ((index = builder.indexOf(charString, i + 1)) != -1) {
+                builder.deleteCharAt(index);
+            }
+        }
+
+        return builder.toString();
     }
 
 }
