@@ -5,10 +5,14 @@ package by.epam.module03.regular_expression;
 отсортировать лексемы в предложении по убыванию количества вхождений заданного символа, а в случае равенства – по
 алфавиту*/
 
+import java.util.HashMap;
+import java.util.LinkedHashMap;
+import java.util.Optional;
+
 public class Task1R {
 
   public static void main(String[] args) {
-
+    Optional<String> optionalS = new Optional<>();
   }
 
 

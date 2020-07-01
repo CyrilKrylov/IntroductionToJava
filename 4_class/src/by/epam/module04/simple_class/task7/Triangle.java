@@ -21,27 +21,7 @@ public class Triangle {
     public Triangle(CoordinatePoint topA, CoordinatePoint topB, CoordinatePoint topC) {
         super();
 
-        double triangleSideAB;
-        double triangleSideBC;
-        double triangleSideCA;
-
-        triangleSideAB = getDistanceBetweenPoints(topA, topB);
-        triangleSideBC = getDistanceBetweenPoints(topB, topC);
-        triangleSideCA = getDistanceBetweenPoints(topC, topA);
-
-        if (isTriangle(triangleSideAB, triangleSideBC, triangleSideCA)) {
-            System.out.println("Треугольник успешно создан");
-            this.topA = topA;
-            this.topB = topB;
-            this.topC = topC;
-            this.triangleSideAB = triangleSideAB;
-            this.triangleSideBC = triangleSideBC;
-            this.triangleSideCA = triangleSideCA;
-        } else {
-            System.out.println("Треугольника с заданными координатами не существует,"
-                    + " сформирован треугольник по умолчанию");
-            setDefaults();
-        }
+        createTriangle(topA, topB, topC);
 
     }
 
@@ -69,6 +49,30 @@ public class Triangle {
 
 		return new CoordinatePoint(xMedianPoint, yMedianPoint);
 	}
+
+    private void createTriangle(CoordinatePoint topA, CoordinatePoint topB, CoordinatePoint topC) {
+        double triangleSideAB;
+        double triangleSideBC;
+        double triangleSideCA;
+
+        triangleSideAB = getDistanceBetweenPoints(topA, topB);
+        triangleSideBC = getDistanceBetweenPoints(topB, topC);
+        triangleSideCA = getDistanceBetweenPoints(topC, topA);
+
+        if (isTriangle(triangleSideAB, triangleSideBC, triangleSideCA)) {
+            System.out.println("Треугольник успешно создан");
+            this.topA = topA;
+            this.topB = topB;
+            this.topC = topC;
+            this.triangleSideAB = triangleSideAB;
+            this.triangleSideBC = triangleSideBC;
+            this.triangleSideCA = triangleSideCA;
+        } else {
+            System.out.println("Треугольника с заданными координатами не существует,"
+                   + " сформирован треугольник по умолчанию");
+            setDefaults();
+        }
+    }
 
     private boolean isTriangle(double triangleSideAB, double triangleSideBC, double triangleSideCA) {
         return (triangleSideAB + triangleSideBC) > triangleSideCA
